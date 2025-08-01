@@ -1,0 +1,59 @@
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;   /* Center horizontally */
+        align-items: center;       /* Center vertically */
+        flex-direction: column;    /* Stack message + link vertically */
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    .submit-message {
+        text-align: center;
+        background: #e0ffe0;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .submit-message p {
+        color: green;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    a:hover {
+        background-color: #0056b3;
+    }
+
+    @media screen and (max-width: 480px) {
+    .submit-message {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .submit-message p {
+        font-size: 16px;
+    }
+
+    a {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}

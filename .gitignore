@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+*.sqlite3
+*.log
+staticfiles/
+media/
+
+# Environments
+venv/
+env/
+ENV/
+*.env
+
+# System
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Node (if using Tailwind or frontend tools)
+node_modules/

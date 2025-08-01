@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <img class="logo animate-fade-in" src="{% static 'main/images/logo1.png'%}" alt="not found">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Vrashti</h2>
+            </a>
+            <ul class="nav-menu" id="vras">
+                <li class="nav-item" >
+                    <a href="#home" onclick="toggleMenu()" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" onclick="toggleMenu()" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" onclick="toggleMenu()" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-me" onclick="toggleMenu()" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+            <button class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        </nav>
+       
+    </header>
+    <main>
+        <!-- Home section -->
+        <section class="home-section" id="home">
+            <div class="section-content">
+                <div class="home-detail">
+                    <h2 class="title animate-slide-in">Hello!<br> I am Vrashti Patidar</h2>
+                    <h3 class="subtitle animate-fade-in">BTech CSE Student | Tech Enthusiast <br> AI/ML Learner | CS
+                        Undergrad</h3>
+                    <div class="social">
+
+
+                        <a href="{% static 'main/files/Resume.pdf' %}" class="resume">Resume</a>
+
+                        <a class="contact-icons" href="https://www.linkedin.com/in/vrashti-patidar-415a10314"
+                            target="_blank">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+
+                        <a class="contact-icons" href="https://github.com/Vrashti-Patidar" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                         
+                    </div>
+
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="{% static 'main/images/self1.png' %}" class="animate-zoom-in" alt="image not found">
+            </div>
+
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content1">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="{% static 'main/images/about-image.jpg' %}" alt="not found">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="about-subtitle">About Me</h1>
+                        <p class="description">I'm a passionate Computer Science student with a strong interest in
+                            Artificial Intelligence and emerging technologies. I enjoy building intelligent systems and
+                            continuously learning how machines can think, learn, and solve real-world problems.
+                            Currently
+                            exploring machine learning, Python, and AI tools to shape my future in tech.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C,C++,Java,Python</li>
+                                <li><span>Web Development</span><br>HTML,CSS,JavaScript,Bootstrap</li>
+                                <li><span>Framework</span><br>Django,ReactJs</li>
+                                <li><span>Tools & Technologies</span><br>GitHub,VS Code,Eclipse,XAMPP</li>
+                                <li><span>Data Structure & Algorithms</span><br>Good grasp of arrays, linked list,
+                                    stacks, queues, trees, graphs, searching & sorting</li>
+                                <li><span>Subject Studied</span><br>Operating System, DBMS, Computer Networks, OOPs,
+                                    Theory of Computation</li>
+                                <li><span>Soft Skills</span><br>Communication, Time Management, Teamwork, Adaptability
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li>
+                                    <h2><i class="fab fa-java"></i> Java Development Intern</h2>
+                                    Completed a hands-on internship focusing on Java development. Gained practical<br>
+                                    experience working with core Java concepts and developed dynamic web
+                                    applications<br>
+                                    using <strong>Servlet</strong> and <strong>JSP</strong>.
+                                </li>
+                                <li>
+                                    <h2>💻 Student Portfolio Website</h2>
+                                    Designed and developed a responsive personal portfolio using HTML, CSS,
+                                    JavaScript,<br>
+                                    and Django. Showcases projects, skills, and contact form integration.
+                                </li>
+                                <li>
+                                    <h2>📊 Data Analysis with Python</h2>
+                                    Analyzed real-world datasets using pandas and matplotlib to uncover trends and
+                                    visualize insights.
+                                </li>
+                                <li>
+                                    <h2>🎲 Snake and Ladder Game</h2>
+                                    Built a full-stack game with HTML/CSS/JS frontend and C backend using CGI scripting.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <h2 class="subject">Bachelor of Technology (B.Tech)<br> Computer Science and Engineering
+                                </h2>
+                                <h3>Medicaps University, Indore<br>2023 - Present(Expected Graduation:2027)</h3>
+                                <h3>Current CGPA: 8.2</h3>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section -->
+        <section class="service-section" id="service">
+            <h1 class="service-title">My <span class="highlight">Services</span></h1>
+            <div class="service-content">
+                <div class="service-card">
+                    <i class="fas fa-code service-icon"></i>
+                    <h2>Web Development</h2>
+                    <p>I design and develop responsive websites using <strong>HTML</strong>, <strong>CSS</strong>,
+                        <strong>JavaScript</strong>, and frameworks like <strong>Bootstrap</strong>. I also work with
+                        backend tools such as <strong>Django</strong> and <strong>MySQL</strong> to build full-stack web
+                        applications. I focus on clean UI, usability, and mobile-friendly design.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-brain service-icon"></i>
+                    <h2>AI & ML Projects</h2>
+                    <p>I’m currently learning Artificial Intelligence and Machine Learning, exploring tools like
+                        <strong>Python</strong>, <strong>scikit-learn</strong>, and <strong>TensorFlow</strong>. I'm
+                        working on small projects and continually expanding my skills to build smart, data-driven
+                        solutions.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h2>Project Development</h2>
+                    <p>I help in developing academic and mini-projects using technologies like
+                        <strong>HTML/CSS</strong>,
+                        <strong>JavaScript</strong>, <strong>Python</strong>, and <strong>MySQL</strong>. Whether it's a
+                        college assignment, a tech showcase, or a custom tool, I focus on clean design and practical
+                        functionality.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+        <section class="contact-section" id="contact-me">
+            <div class="contact-container">
+                <!-- Left Side -->
+                <div class="contact-left">
+                    <h2>Contact <span>Me</span></h2>
+                    <h4>Let's Work Together</h4>
+                    <p>Interested in working together or have a question?<br> Feel free to drop a message!</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-paper-plane"></i> patidarvrashti2005@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 7869211460</p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/vrashti-patidar-415a10314"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Vrashti-Patidar"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="contact-right">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea rows="5" name="message" placeholder="Enter Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+    {% block js %}
+    <script src="{% static 'main/js/display.js' %}"></script>{% endblock js%}
+
+</body>
+
+</html>
