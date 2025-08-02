@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-v3bi55y*ai2$tg1eq_eh($bj-shp8n#_tp@!--_g_4pzs$3ibl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-website-cby1.onrender.com']
+ALLOWED_HOSTS = ['portfolio-website-cby1.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -78,12 +78,9 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'default': dj_database_url.config(default='sqlite:///db.sqlite3'),
-    }
+    'default': dj_database_url.config(default="postgres://vrashti:2005@localhost:5432/mydb")
 }
+
 
 
 # Password validation
