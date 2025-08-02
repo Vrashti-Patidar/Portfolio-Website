@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default="postgres://vrashti:2005@localhost:5432/mydb")
+    'default': dj_database_url.config(default="DATABASE_URL")
 }
 
 
