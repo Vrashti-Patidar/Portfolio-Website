@@ -521,7 +521,7 @@ main {
 
 /* Responsive nav bar section */
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   .navbar {
     flex-wrap: wrap;
   }
@@ -572,51 +572,47 @@ main {
 
 @media (max-width: 600px) {
   
-  .home-section{
-    display: flex;
+  .home-section .section-content {
     flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    height: 80vh;
+  }
 
-  }
-  .section-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-   .home-image {
-    opacity: 1;
-    position: static;
-    margin-top: 20px;
+  .home-section .home-image {
+    position: absolute;
+    bottom: 55px;
+    right: -90px;
+    opacity: 0.3;
+   
   }
 
   .home-image img {
+    margin-top: 50px;
+    height: 70%;
     width: 70%;
-    height: auto;
-    transform: none;
+    transform: scale(0.5);
+    z-index: 0;
   }
 
- .home-detail .title {
-    font-size: 28px;
+  .home-section .home-detail .title {
+    font-size: 36px;
   }
 
-  .home-detail .subtitle {
-    font-size: 18px;
-    padding: 10px 0;
+  .home-section .home-detail .subtitle {
+    font-size: 22px;
   }
 
   .social {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    position: static;
+    position: absolute;
+    margin-left: 65px;
+    z-index: 2;
     justify-content: center;
   }
-
-  .social .resume {
-    padding: 8px 16px;
-    font-size: 14px;
+  .social .resume{
+    padding-right: 10px;
   }
 }
 
@@ -662,96 +658,111 @@ main {
 
 @media (max-width: 600px) {
   .service-section {
-    padding: 50px 20px;
-    height: auto;
-    text-align: center;
+    padding: 50px 10px;
+    height: 170vh;
   }
 
   .service-title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .service-card {
+    width: 90%;
   }
 
   .service-content {
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .service-card {
+/* responsive contact section */
+@media (max-width: 600px) {
+  .contact-left {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  .contact-right form {
     width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .service-card h3 {
-    font-size: 20px;
-  }
-
-  .service-card p {
-    font-size: 16px;
+    margin: 100px auto 0;
   }
 }
 
-
-/* responsive contact section */
 @media (max-width: 600px) {
   .contact-container {
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
     height: auto;
-    text-align: center;
+    padding: 30px 20px;
   }
 
-  .contact-left,
-  .contact-right {
-    width: 100%;
-    margin: 20px 0;
+  .contact-left {
+    margin:auto;
+    text-align: center;
+    
   }
 
   .contact-left h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    padding-top: 20px;
   }
 
-  .contact-left h4,
+  .contact-left h4 {
+    font-size: 18px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+  }
+
+  .contact-socials {
+    text-align: center;
+  }
+
+ .contact-right form {
+    width: 400px;
+    height: 400px;
+    margin: 10px 0;
+    padding: 20px;
+    
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .contact-right button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-left h2 {
+    font-size: 30px;
+  }
+
+  .contact-left h4 {
+    font-size: 16px;
+  }
+
   .contact-info p {
     font-size: 16px;
   }
 
   .contact-socials a {
     font-size: 20px;
-    margin: 0 8px;
+    margin-right: 10px;
   }
 
   .contact-right form {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .contact-right input,
-  .contact-right textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-
-  .contact-right button {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 8px;
-    background-color: #0077b5;
-    color: white;
-    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
 }
-
 
 /* success page */
