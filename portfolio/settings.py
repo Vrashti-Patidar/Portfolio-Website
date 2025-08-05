@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from dotenv import load_dotenv
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR=os.path.join(BASE_DIR,'main','static')
@@ -80,12 +82,11 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
-        conn_max_age=600,
-        conn_health_checks=True,
+        default='postgres://portfolio_db_ufdc_user:rZ345l2JgODx9PGhFEIK40K9sowVWlVV@dpg-d26c20vdiees738vllf0-a.oregon-postgres.render.com:5432/portfolio_db_ufdc',
+        conn_max_age=600
     )
 }
-print("DATABASE_URL:", os.environ.get("DATABASE_URL"))
+#print("DATABASE_URL:", os.environ.get("DATABASE_URL"))
 
 
 
