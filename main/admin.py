@@ -4,4 +4,4 @@ from .models import Contact
 # admin.site.register(Contact)  (for object)
 @admin.register(Contact)
 class UserModel(admin.ModelAdmin):
-    list_display=['id','name','email','message']
+    list_display=['id', 'name','email','message']
