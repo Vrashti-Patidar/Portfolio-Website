@@ -985,14 +985,24 @@ main {
   /* Resume Button */
   .resume {
     font-size: 16px;
-    width: 80px;
-    height: 35px;
-    margin: 10px 0;
+    /* text-align: center; */
+    padding-top: 10px;
+    padding-left: 12px;
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    
+    color: rgb(49, 49, 49);
+    background-color: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    transform: translateX(-10px);
   }
 
   /* Icons spacing */
   .contact-icons {
     margin: 10px;
+    transform: translateX(-10px);
   }
 
   .contact-socials a {
