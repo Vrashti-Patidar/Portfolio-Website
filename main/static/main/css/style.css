@@ -521,7 +521,7 @@ main {
 
 /* Responsive nav bar section */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .navbar {
     flex-wrap: wrap;
   }
@@ -567,7 +567,7 @@ main {
 
 /* responsive home section */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   
   .home-section .section-content {
     flex-direction: column;
@@ -615,7 +615,7 @@ main {
 
 /* responsive about section */
 
-@media (max-width: 600px ) {
+@media (max-width: 480px ) {
     .about-section{
         height: 160vh;
     }
@@ -626,8 +626,8 @@ main {
 
   .about-col1,
   .about-col2 {
-    /* margin-top: -150px; */
-    /* flex-basis: 100%; */
+    margin-top: -150px;
+    flex-basis: 100%;
     text-align: center;
   }
   .about-col1 img {
@@ -653,7 +653,7 @@ main {
 
 /* responsive service section */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .service-section {
     padding: 50px 10px;
     height: 170vh;
@@ -675,7 +675,7 @@ main {
 }
 
 /* responsive contact section */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .contact-left {
     margin-left: 50px;
     margin-top: 100px;
