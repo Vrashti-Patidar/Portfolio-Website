@@ -855,7 +855,7 @@ main {
   }
   to {
     opacity: 0.3;
-    transform: scale(2.5);
+    transform: scale(2);
   }
 }
 
