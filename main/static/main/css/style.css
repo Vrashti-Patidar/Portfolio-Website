@@ -842,7 +842,7 @@ main {
   height: 600px;
   margin-bottom: -500px;
   opacity: 0;
-  margin-left: 30%;      
+  margin-left: 20%;      
   animation: fadeInImage 2s ease-in forwards;
   animation-delay: 1s;
   display: block;
@@ -855,7 +855,7 @@ main {
   }
   to {
     opacity: 0.3;
-    transform: scale(2);
+    transform: scale(1.7);
   }
 }
 
