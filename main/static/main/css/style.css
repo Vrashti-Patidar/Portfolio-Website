@@ -168,7 +168,9 @@ main {
 
 .home-image{
     max-width: 100%;            /* responsive width */
-    height: auto;
+    height: 350px;
+    margin-right: 100px;
+   margin-bottom: -119px;
     transform: scale(1);
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
@@ -180,7 +182,7 @@ main {
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.6);
   }
 }
 
@@ -521,249 +523,6 @@ main {
 
 /* Responsive nav bar section */
 
-/* @media (max-width: 480px) {
- 
-  .navbar {
-    flex-wrap: wrap;
-    width: 92.5%;
-  }
-
-  .navbar .logo-text {
-    margin-left: 0px;
-    font-size: 24px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    background-color:#0077b5;
-    position: absolute;
-    top: 50px;
-    width: 150px;
-    display: none;
-    padding: 5px;
-    border-radius: 0 0 10px 10px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .nav-menu.show {
-    display: flex;
-  }
-
-  .nav-link {
-    display: flex;
-    color: white;
-    padding: 5px;
-    gap: 15px;
-    text-align: left;
-    transition: 0.3s;
-  }
-  .nav-link:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-  }
-  .menu-icon{
-    display: flex;
-  }
-} */
-
-/* responsive home section */
-
-/* @media (max-width: 480px) {
-  
-  .home-section .section-content {
-    flex-direction: column;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center;
-    height: 80vh;
-  }
-
-  .home-section .home-image {
-    position: absolute;
-    bottom: 55px;
-    right: -90px;
-    opacity: 0.3;
-   size: 5vh;
-  }
-
-  .home-image img {
-    margin-top: 50px;
-    height: 70%;
-    width: 70%;
-    transform: scale(0.5);
-    z-index: 0;
-  }
-
-  .home-section .home-detail .title {
-    font-size: 36px;
-  }
-
-  .home-section .home-detail .subtitle {
-    font-size: 22px;
-  }
-
-  .social {
-    position: absolute;
-    margin-left: 65px;
-    z-index: 2;
-    justify-content: center;
-  }
-  .social .resume{
-    padding-right: 10px;
-  }
-} */
-
-/* responsive about section */
-
-/* @media (max-width: 480px ) {
-    .about-section{
-        height: 160vh;
-    }
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-col1,
-  .about-col2 {
-    margin-top: -150px;
-    flex-basis: 100%;
-    text-align: center;
-  }
-  .about-col1 img {
-   
-    transform: scale(0.5);
-  }
-  .about-subtitle {
-    font-size: 36px;
-  }
-  .about-col2 .description{
-    margin: 0 10px;
-  }
-  .about-col2 .tab-titles{
-    margin-left: 50px;
-    
-  }
-  .about-col2 .tab-content{
-    margin: 0 10px;
-    top: 30px;
-    left: 0;
-  }
-} */
-
-/* responsive service section */
-
-/* @media (max-width: 480px) {
-  .service-section {
-    padding: 50px 10px;
-    height: 170vh;
-  }
-
-  .service-title {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-
-  .service-card {
-    width: 90%;
-  }
-
-  .service-content {
-    flex-direction: column;
-    align-items: center;
-  }
-} */
-
-/* responsive contact section */
-/* @media (max-width: 480px) {
-  .contact-left {
-    margin-left: 50px;
-    margin-top: 100px;
-  }
-
-  .contact-right form {
-    width: 90%;
-    margin: 100px auto 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .contact-left {
-    margin:auto;
-    text-align: center;
-    
-  }
-
-  .contact-left h2 {
-    font-size: 40px;
-    padding-top: 20px;
-  }
-
-  .contact-left h4 {
-    font-size: 18px;
-  }
-
-  .contact-info p {
-    font-size: 18px;
-  }
-
-  .contact-socials {
-    text-align: center;
-  }
-
- .contact-right form {
-    width: 400px;
-    height: 400px;
-    margin: 10px 0;
-    padding: 20px;
-    
-  }
-
-  .contact-right input,
-  .contact-right textarea {
-    margin: 10px 0;
-    width: 100%;
-  }
-
-  .contact-right button {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .contact-left h2 {
-    font-size: 30px;
-  }
-
-  .contact-left h4 {
-    font-size: 16px;
-  }
-
-  .contact-info p {
-    font-size: 16px;
-  }
-
-  .contact-socials a {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-
-  .contact-right form {
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  }
-} */
-
 @media (max-width: 480px) {
   /* NAVBAR */
   .navbar {
@@ -839,10 +598,10 @@ main {
   position: absolute;  
   object-fit: contain;
   width: 100%;
-  height: 600px;
-  margin-bottom: -500px;
+  height: 700px;
+  margin-bottom: -600px;
   opacity: 0;
-  margin-left: 20%;      
+  margin-left: 30%;      
   animation: fadeInImage 2s ease-in forwards;
   animation-delay: 1s;
   display: block;
@@ -985,19 +744,22 @@ main {
   /* Resume Button */
   .resume {
     font-size: 16px;
-    /* text-align: center; */
     padding-top: 10px;
     padding-left: 12px;
     margin: 10px;
     height: 40px;
     width: 100px;
-    
     color: rgb(49, 49, 49);
     background-color: white;
     border-radius: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     transform: translateX(-10px);
   }
+ .resume.clicked {
+  background-color: #005a91; 
+  color: white;
+  transform: scale(1);
+}
 
   /* Icons spacing */
   .contact-icons {
